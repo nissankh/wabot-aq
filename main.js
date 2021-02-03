@@ -93,14 +93,14 @@ conn.handler = async function (m) {
       if (chat =  global.DATABASE._data.chats[m.chat]) {
         if (!'isBanned' in chat) chat.isBanned = false
         if (!'welcome' in chat) chat.welcome = false
-        if (!'sWelcome' in chat) chat.sWelcome = ''
-        if (!'sBye' in chat) chat.sBye = ''
+        if (!'sWelcome' in chat) chat.sWelcome = 'KERIVADA MAKKALE'
+        if (!'sBye' in chat) chat.sBye = 'OK BYE'
         if (!'delete' in chat) chat.delete = true
       } else global.DATABASE._data.chats[m.chat] = {
         isBanned: false,
         welcome: false,
-        sWelcome: '',
-        sBye: '',
+        sWelcome: 'KERIVADA MAKKALE',
+        sBye: 'OK BYE',
         delete: true
       }
     } catch (e) {
